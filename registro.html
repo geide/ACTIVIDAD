@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/registro.js" defer></script>
+    <title>Registro de Usuarios</title>
+    <style>
+        /* Estilo para la tabla */
+        #userTable {
+            border-collapse: collapse; /* Colapsar bordes */
+            width: 100%; /* Ancho completo */
+        }
+        #userTable th, #userTable td {
+            border: 1px solid black; /* Bordes de la celda */
+            padding: 8px; /* Espaciado interno */
+            text-align: left; /* Alinear texto a la izquierda */
+        }
+        #userTable th {
+            background-color: #f2f2f2; /* Fondo para el encabezado */
+        }
+    </style>
+</head>
+<body>
+    <h1>Registro de Usuarios</h1>
+    <form id="userForm">
+        <label for="userId">ID (Ej: A12345):</label>
+        <input type="text" id="userId" required>
+        <label for="cedula">Cédula de Identidad:</label>
+        <input type="text" id="cedula" required>
+        <label for="fullName">Nombres y Apellidos:</label>
+        <input type="text" id="fullName" required>
+        <label for="birthdate">Fecha de Nacimiento:</label>
+        <input type="date" id="birthdate" required>
+        <label for="city">Ciudad de Procedencia:</label>
+        <select id="city" required>
+            <option value="">Seleccione una ciudad</option>
+            <option value="Ambato">Ambato</option>
+            <option value="Arenillas">Arenillas</option>
+            <option value="Atuntaqui">Atuntaqui</option>
+            <option value="Baños de Agua Santa">Baños de Agua Santa</option>
+            <option value="Babahoyo">Babahoyo</option>
+            <option value="Boca del Río">Boca del Río</option>
+            <option value="Cariamanga">Cariamanga</option>
+            <option value="Cayambe">Cayambe</option>
+            <option value="Cuenca">Cuenca</option>
+            <option value="Chone">Chone</option>
+            <option value="Esmeraldas">Esmeraldas</option>
+            <option value="Guayaquil">Guayaquil</option>
+            <option value="Guaranda">Guaranda</option>
+            <option value="Ibarra">Ibarra</option>
+            <option value="Latacunga">Latacunga</option>
+            <option value="Loja">Loja</option>
+            <option value="Manta">Manta</option>
+            <option value="Machala">Machala</option>
+            <option value="Montañita">Montañita</option>
+            <option value="Otavalo">Otavalo</option>
+            <option value="Portoviejo">Portoviejo</option>
+            <option value="Quevedo">Quevedo</option>
+            <option value="Quito">Quito</option>
+            <option value="Riobamba">Riobamba</option>
+            <option value="Salinas">Salinas</option>
+            <option value="San Gabriel">San Gabriel</option>
+            <option value="San Lorenzo">San Lorenzo</option>
+            <option value="Santo Domingo">Santo Domingo</option>
+            <option value="Saraguro">Saraguro</option>
+            <option value="Tena">Tena</option>
+            <option value="Tulcán">Tulcán</option>
+            <option value="Zamora">Zamora</option>
+        </select>
+        <button type="submit">Registrar</button>
+    </form>
+
+    <h2>Datos Registrados</h2>
+    <table id="userTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Cédula</th>
+                <th>Nombres y Apellidos</th>
+                <th>Fecha de Nacimiento</th>
+                <th>Ciudad</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="funcionalidades.html">Funcionalidades Lógicas</a></li>
+            <li><a href="registro.html">Registro de Usuarios</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
